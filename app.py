@@ -1,4 +1,4 @@
-# ============================================================
+============================================================
 # V7 ENTERPRISE AI DOCUMENT INTELLIGENCE
 # PART 1/4
 # CORE ENGINE
@@ -25,14 +25,14 @@ from docx import Document
 # ============================================================
 
 
+# ============================================================
+# PAGE CONFIG
+# ============================================================
+
 st.set_page_config(
-
-    page_title="V7 Enterprise AI Document Intelligence",
-
+    page_title="Doc Lang Switcher",
     layout="wide",
-
-    page_icon="🧠"
-
+    page_icon="🌍"
 )
 
 
@@ -1197,23 +1197,17 @@ if "target_language" not in st.session_state:
 # ============================================================
 
 
-st.title(
-    "🧠 V7 Enterprise AI Document Intelligence"
-)
-
+st.title("🌍 DocLangAI")
 
 
 st.write(
-
 """
+AI-Powered Document Translation
 
-Upload → Analyze → Extract → Translate → Validate → Download
+Upload → Analyze → Translate → Download
 
-
-Enterprise AI document processing platform.
-
+Translate DOCX, PDF, TXT, and Images instantly with AI.
 """
-
 )
 
 
@@ -1733,22 +1727,15 @@ with col3:
 # FOOTER
 # ============================================================
 
-
 st.caption(
-
 """
+🌍 DocLangAI
 
-V7 Enterprise AI Document Intelligence
+AI-Powered Document Translation
 
-Pipeline:
+Supported formats:
+DOCX • PDF • TXT • PNG • JPG
 
-Upload → OCR → Parsing → Classification →
-
-Entity Extraction → Translation Memory →
-
-Translation → Validation → Download
-
-
+Powered by OpenAI
 """
-
 )
